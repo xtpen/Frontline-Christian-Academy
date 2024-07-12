@@ -10,6 +10,106 @@
   .container {
     @apply max-w-[1600px] w-full px-4 mx-auto;
   }
+
+  /* about */
+  .tabs{
+    @apply grid 
+    /* desktop */
+    lg:grid-cols-[1fr_3fr] 
+    /* medium */
+    md:grid-cols-[1fr_3fr]
+  }
+  .about__wrapper{
+    @apply flex flex-col items-center
+  }
+  .about__wrapper h2{
+    @apply text-4xl lg:text-7xl pt-8 font-thin pb-14 
+  }
+  .aboutTabs{
+    @apply flex flex-col items-center gap-4 pb-[4rem] 
+    lg:items-start
+    /* medium */
+    md:items-start
+
+  }
+  .aboutTabs li{
+    @apply text-xl text-gray cursor-pointer
+  }
+  .aboutTabs__details--wrap h3{
+    @apply text-2xl font-semibold pb-[2rem]
+  }
+  .aboutTabs__details--wrap p{
+    @apply text-justify text-[1.05rem] leading-9 tracking-tight pb-4
+  }
+  .aboutTabs__details--wrap .imgs{
+    @apply flex 
+  }
+  .aboutTabs__details--wrap .imgs img{
+    @apply lg:w-[22rem]
+  }
+  .aboutTabs__details--wrap .img1{
+    @apply w-[19rem]
+  }
+  .aboutTabs__details--wrap .img2{
+    @apply w-[8rem] h-[8rem] lg:h-[22rem]
+  }
+  .aboutTabs__details--wrap .img3{
+    @apply w-[50%]
+  }
+  .core__wrap{
+    @apply lg:grid lg:grid-cols-2 lg:gap-6
+  }
+
+  .aboutTabs li.active{
+    @apply text-primary underline
+  }
+  .aboutTabs__details{
+    @apply hidden
+  }
+  .aboutTabs__details.active{
+    @apply block
+  }
+
+  .imgWrapper{
+    @apply relative h-[20rem] overflow-hidden 
+    /* desktop */
+    flex justify-center
+  }
+  .imgWrapper img{
+    @apply absolute transition-transform duration-500
+  }
+  .imgWrapper img:first-child{
+    @apply opacity-35 top-[4rem] w-[17rem]
+    /* desktop */
+    lg:w-[18rem] lg:top-[3rem]
+  }
+
+  .team{
+    @apply lg:w-full py-40 text-center
+  }
+  .team h2{
+    @apply text-primary font-semibold text-4xl pb-[4rem]
+  }
+  .team__contain{
+    @apply grid  grid-cols-1 lg:grid-cols-3 lg:gap-[6rem] md:grid-cols-2
+  }
+  .teamCard:hover{
+    @apply cursor-pointer
+  }
+  .teamCard:hover img:first-child{
+    @apply opacity-60 scale-95
+  }
+  .teamCard:hover img:last-child{
+    @apply scale-105 translate-y-4
+  }
+  .teamCard h4{
+    @apply font-semibold pt-[1rem] pb-1
+  }
+  .teamCard p{
+    @apply text-sm
+  }
+  
+
 }
 
 

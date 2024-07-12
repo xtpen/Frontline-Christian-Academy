@@ -12,6 +12,7 @@ module.exports = {
         secondary: "#d9a625",
         tertiary: "#27941e",
         underline: "#528542",
+        gray: "#737373",
       },
     },
   },

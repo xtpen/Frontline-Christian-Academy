@@ -18,7 +18,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -453,6 +453,244 @@ body{
   font-family: Raleway;
 }
 
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1600px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* about */
+
+.tabs{
+  display: grid;
+}
+
+@media (min-width: 768px){
+  .tabs{
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+@media (min-width: 1024px){
+  .tabs{
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+.about__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__wrapper h2{
+  padding-top: 2rem;
+  padding-bottom: 3.5rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 100;
+}
+
+@media (min-width: 1024px){
+  .about__wrapper h2{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+.aboutTabs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px){
+  .aboutTabs{
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1024px){
+  .aboutTabs{
+    align-items: flex-start;
+  }
+}
+
+.aboutTabs li{
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity));
+}
+
+.aboutTabs__details--wrap h3{
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.aboutTabs__details--wrap p{
+  padding-bottom: 1rem;
+  text-align: justify;
+  font-size: 1.05rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.025em;
+}
+
+.aboutTabs__details--wrap .imgs{
+  display: flex;
+}
+
+@media (min-width: 1024px){
+  .aboutTabs__details--wrap .imgs img{
+    width: 22rem;
+  }
+}
+
+.aboutTabs__details--wrap .img1{
+  width: 19rem;
+}
+
+.aboutTabs__details--wrap .img2{
+  height: 8rem;
+  width: 8rem;
+}
+
+@media (min-width: 1024px){
+  .aboutTabs__details--wrap .img2{
+    height: 22rem;
+  }
+}
+
+.aboutTabs__details--wrap .img3{
+  width: 50%;
+}
+
+@media (min-width: 1024px){
+  .core__wrap{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+.aboutTabs li.active{
+  --tw-text-opacity: 1;
+  color: rgb(0 133 66 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
+.aboutTabs__details{
+  display: none;
+}
+
+.aboutTabs__details.active{
+  display: block;
+}
+
+.imgWrapper{
+  position: relative;
+  display: flex;
+  height: 20rem;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.imgWrapper img{
+  position: absolute;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.imgWrapper img:first-child{
+  top: 4rem;
+  width: 17rem;
+  opacity: 0.35;
+}
+
+@media (min-width: 1024px){
+  .imgWrapper img:first-child{
+    top: 3rem;
+    width: 18rem;
+  }
+}
+
+.team{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+
+@media (min-width: 1024px){
+  .team{
+    width: 100%;
+  }
+}
+
+.team h2{
+  padding-bottom: 4rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(0 133 66 / var(--tw-text-opacity));
+}
+
+.team__contain{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px){
+  .team__contain{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px){
+  .team__contain{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6rem;
+  }
+}
+
+.teamCard:hover{
+  cursor: pointer;
+}
+
+.teamCard:hover img:first-child{
+  --tw-scale-x: .95;
+  --tw-scale-y: .95;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0.6;
+}
+
+.teamCard:hover img:last-child{
+  --tw-translate-y: 1rem;
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.teamCard h4{
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.teamCard p{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -559,6 +797,40 @@ body{
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
+}
+
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
 }
 
 /* 
