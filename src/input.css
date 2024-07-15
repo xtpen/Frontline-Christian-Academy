@@ -209,9 +209,36 @@
     @apply text-[1.3rem] font-semibold
   }
 
-    /* slider */
+  /* slider */
   .tns-outer{
-    @apply overflow-hidden  
+    @apply overflow-hidden flex;
+  }
+  /* .tns-outer button{
+    @apply hidden
+  }
+  .tns-nav{
+    @apply text-start absolute
+  }
+  .tns-nav button{
+    @apply my-[2rem] mx-[0.5rem] w-[1rem] h-[1rem] rounded-full border-none bg-slate-400
+  }
+  .tns-nav button:hover{
+    @apply bg-slate-600
+  }
+  .tns-nav-active{
+    @apply bg-slate-500
+  } */
+
+  .tns-controls{
+    @apply hidden
+  }
+  
+  /* Home Slider */
+  .clients_wrapper_slider_card{
+    @apply pb-[2rem]
+  }
+  .clients_wrapper_slider_card_text {
+    @apply block items-center text-center justify-center;
   }
 
   /* branches */

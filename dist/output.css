@@ -961,6 +961,40 @@ body{
 
 /* slider */
 
+.tns-outer{
+  display: flex;
+  overflow: hidden;
+}
+
+/* .tns-outer button{
+    @apply hidden
+  }
+  .tns-nav{
+    @apply text-start absolute
+  }
+  .tns-nav button{
+    @apply my-[2rem] mx-[0.5rem] w-[1rem] h-[1rem] rounded-full border-none bg-slate-400
+  }
+  .tns-nav button:hover{
+    @apply bg-slate-600
+  }
+  .tns-nav-active{
+    @apply bg-slate-500
+  } */
+
+/* Home Slider */
+
+.clients_wrapper_slider_card{
+  padding-bottom: 2rem;
+}
+
+.clients_wrapper_slider_card_text{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /* branches */
 
 .branches__wrapper{
@@ -1004,10 +1038,6 @@ body{
 .homeBanner video{
   height: 45rem;
   width: 120rem;
-}
-
-.images img{
-  width: 15rem;
 }
 
 *, ::before, ::after{
@@ -1215,6 +1245,10 @@ body{
   left: 6rem;
 }
 
+.left-\[80rem\]{
+  left: 80rem;
+}
+
 .top-\[-0\.5rem\]{
   top: -0.5rem;
 }
@@ -1247,6 +1281,22 @@ body{
   top: 5.85rem;
 }
 
+.right-\[12rem\]{
+  right: 12rem;
+}
+
+.top-\[40rem\]{
+  top: 40rem;
+}
+
+.left-\[66rem\]{
+  left: 66rem;
+}
+
+.left-\[25rem\]{
+  left: 25rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -1277,6 +1327,10 @@ body{
   margin-right: auto;
 }
 
+.mb-\[0\.6rem\]{
+  margin-bottom: 0.6rem;
+}
+
 .block{
   display: block;
 }
@@ -1295,6 +1349,10 @@ body{
 
 .h-\[2\.5rem\]{
   height: 2.5rem;
+}
+
+.h-\[240px\]{
+  height: 240px;
 }
 
 .h-\[30rem\]{
@@ -1321,6 +1379,10 @@ body{
   width: 200px;
 }
 
+.w-\[240px\]{
+  width: 240px;
+}
+
 .w-\[26rem\]{
   width: 26rem;
 }
@@ -1333,8 +1395,12 @@ body{
   width: 38px;
 }
 
-.w-\[7rem\]{
-  width: 7rem;
+.w-\[6rem\]{
+  width: 6rem;
+}
+
+.w-\[8rem\]{
+  width: 8rem;
 }
 
 .w-full{
@@ -1347,10 +1413,6 @@ body{
 
 .cursor-pointer{
   cursor: pointer;
-}
-
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -1369,16 +1431,16 @@ body{
   justify-content: space-between;
 }
 
-.gap-2{
-  gap: 0.5rem;
-}
-
 .gap-\[0\.5px\]{
   gap: 0.5px;
 }
 
 .gap-\[1rem\]{
   gap: 1rem;
+}
+
+.gap-\[4rem\]{
+  gap: 4rem;
 }
 
 .overflow-hidden{
@@ -1413,6 +1475,11 @@ body{
 .bg-\[\#3b5897\]{
   --tw-bg-opacity: 1;
   background-color: rgb(59 88 151 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f2f2f2\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
 }
 
 .bg-headerbotspan{
@@ -1513,16 +1580,16 @@ body{
   padding-bottom: 5rem;
 }
 
-.pb-2{
-  padding-bottom: 0.5rem;
-}
-
 .pb-\[1rem\]{
   padding-bottom: 1rem;
 }
 
 .pb-\[2rem\]{
   padding-bottom: 2rem;
+}
+
+.pb-\[3rem\]{
+  padding-bottom: 3rem;
 }
 
 .pb-\[5rem\]{
@@ -1535,10 +1602,6 @@ body{
 
 .pt-\[16rem\]{
   padding-top: 16rem;
-}
-
-.pt-\[2rem\]{
-  padding-top: 2rem;
 }
 
 .pt-\[4rem\]{
@@ -1555,6 +1618,10 @@ body{
 
 .text-center{
   text-align: center;
+}
+
+.text-justify{
+  text-align: justify;
 }
 
 .font-tinos{
@@ -1728,13 +1795,33 @@ body{
     position: static;
   }
 
+  .lg\:left-\[55rem\]{
+    left: 55rem;
+  }
+
   .lg\:right-0{
     right: 0px;
+  }
+
+  .lg\:right-\[\]{
+    right: ;
+  }
+
+  .lg\:top-\[40rem\]{
+    top: 40rem;
+  }
+
+  .lg\:right-\[12rem\]{
+    right: 12rem;
   }
 
   .lg\:mx-0{
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .lg\:mr-20{
+    margin-right: 5rem;
   }
 
   .lg\:block{
@@ -1761,16 +1848,36 @@ body{
     width: 25rem;
   }
 
+  .lg\:w-\[6rem\]{
+    width: 6rem;
+  }
+
   .lg\:w-\[90rem\]{
     width: 90rem;
+  }
+
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-\[2fr_1fr\]{
+    grid-template-columns: 2fr 1fr;
   }
 
   .lg\:flex-row{
     flex-direction: row;
   }
 
+  .lg\:items-center{
+    align-items: center;
+  }
+
   .lg\:justify-evenly{
     justify-content: space-evenly;
+  }
+
+  .lg\:gap-\[1rem\]{
+    gap: 1rem;
   }
 
   .lg\:gap-\[20rem\]{
@@ -1781,6 +1888,10 @@ body{
     padding-top: 0px;
   }
 
+  .lg\:text-left{
+    text-align: left;
+  }
+
   .lg\:text-\[6rem\]{
     font-size: 6rem;
   }
@@ -1788,4 +1899,16 @@ body{
   .lg\:leading-\[7rem\]{
     line-height: 7rem;
   }
+}
+
+.\[\&\>\:last-child\]\:-mt-32>:last-child{
+  margin-top: -8rem;
+}
+
+.\[\&\>\:nth-child\(2\)\]\:mt-32>:nth-child(2){
+  margin-top: 8rem;
+}
+
+.\[\&\>\:nth-child\(2\)\]\:pr-2>:nth-child(2){
+  padding-right: 0.5rem;
 }
