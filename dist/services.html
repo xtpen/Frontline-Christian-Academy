@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontline Christian Academy</title>
+  <script src="https://kit.fontawesome.com/7f24b65851.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="icon" href="https://fca.edu.ph/wp-content/uploads/2022/11/cropped-fca-logo-w-e1668728939683-32x32.png" sizes="32x32">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header fixed lg:static z-50 w-full mx-auto bg-white">
+    <div class="container">
+      <div class="header_top border-b border-black flex items-center justify-between">
+        <div class="headerLogo w-[200px] py-2">
+          <a href="home.html"><img src="/img/fca-logo.webp"></a>
+        </div>
+        <div class="headerContact hidden lg:block">
+          <ul class="flex items-center">
+            <li class="mx-2"><i class="fa-solid fa-phone"></i> (049) 521-0732</li>
+            <li class="mx-2"><i class="fa-solid fa-mobile-retro"></i> (+63) 908-202-0749 | (+63) 926-363-9722</li>
+            <li class="mx-2"><a href="https://www.facebook.com/frontlinechristianacademy" class="py-3 px-5 bg-[#3b5897] text-white hover:bg-[#1573e5] rounded-[5px]">Facebook</a></li>
+            <li class="mx-2"><a href="faq.html" class="py-3 px-5 bg-white text-black hover:bg-[#28941e] border border-black rounded-[5px] hover:text-white">FAQ's</a></li>
+          </ul>
+        </div>
+        <div class="toggle_menu lg:hidden cursor-pointer duration-500 flex flex-col gap-[0.5px]">
+          <span class="w-[38px] h-1 block m-0.5"></span>
+          <span class="w-[38px] h-1 block m-0.5"></span>
+          <span class="w-[38px] h-1 block m-0.5"></span>
+        </div>
+      </div>
+      <nav class="header_bottom absolute top-[5.85rem] z-10 bg-white h-screen lg:h-auto -right-[100%] lg:right-0 w-full lg:block lg:static ease-in-out duration-500 transition-all">
+        <ul class="lg:flex lg:justify-evenly">
+          <li><a href="home.html" class="text-textdefault p-[0.5rem] block text-center">HOME</a></li>
+          <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+          <li><a href="about.html" class="text-textdefault p-[0.5rem] block text-center">ABOUT</a></li>
+          <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+          <li><a href="admission.html" class="text-textdefault p-[0.5rem] block text-center">ADMISSION</a></li>
+          <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+          <li><a href="services.html" class="text-textdefault p-[0.5rem] block text-center">SERVICES</a></li> <span class="hidden lg:block lg:absolute lg:content-['_'] lg:bg-secondary 
+          lg:w-[13.2rem] lg:h-[0.5rem] lg:rounded-full lg:top-[5.6rem] lg:right-[54.3rem]"></span>
+          <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+          <li><a href="gallery.html" class="text-textdefault p-[0.5rem] block text-center">GALLERY</a></li>
+          <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+          <li><a href="contact.html" class="text-textdefault p-[0.5rem] block text-center">CONTACT</a></li>
+          <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+          <li><a href="https://fca.edu.ph/donate/" class="hidden lg:block relative top-[0rem] py-2.5 px-9 bg-secondary text-white rounded-[5px]">GIVE</a></li>
+        </ul>
+        <div class="headerContact lg:hidden absolute text-center top-[22rem] left-[6rem] md:left-[14.5rem]">
+          <ul>
+            <li><a href="https://fca.edu.ph/donate/" class="relative top-[-3.2rem] py-3 px-10 bg-secondary text-white rounded-[5px]">GIVE</a></li>
+            <li class="relative top-[-2rem]"><i class="fa-solid fa-phone"></i> (049) 521-0732</li>
+            <li class="relative top-[-1.5rem]"><i class="fa-solid fa-mobile-retro"></i> (+63) 908-202-0749 | (+63) 926-363-9722</li>
+            <li class="mx-2"><a href="https://www.facebook.com/frontlinechristianacademy" class="relative top-[-0.5rem] py-3 px-8 bg-[#3b5897] text-white hover:bg-[#1573e5] rounded-[5px]">Facebook</a></li>
+            <li class="mx-2"><a href="faq.html" class="relative top-[1rem] py-3 px-8 bg-secondary text-white hover:bg-[#28941e] border border-black rounded-[5px] hover:text-white">FAQ's</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+   <section class="services pt-[8.2rem] lg:pt-[6rem]">
+    <div class="container">
+      <h1 class="text-[2.4rem] text-center font-extralight pb-[6.1rem] md:text-[3rem] md:font-thin lg:text-[5rem] lg:font-thin">Services</h1>
+      <h3 class="text-[1.5rem] font-[600] pb-[2.6rem]">Regular Instructional Services:</h3>
+      <div class="services_grid lg:flex gap-[1.5rem]">
+        <div class="services_desc flex flex-col gap-[1.5rem] leading-9 text-justify">
+          <p>
+            FCA offers instructional and educational services throughout the school year, which is currently 
+            from August to June. The curriculum followed is the K-12 Basic Education Curriculum, utilizing 
+            textbooks from the USA, as well as those from local Philippine publishers. FCA focuses on building 
+            academic excellence and character, believing that the kind of people our children become is more 
+            important than how academically smart they are.
+          </p>
+          <p>
+            One of our key focus areas is Social Emotional Learning (in partnership with a US Youth Leadership 
+            organization: “Growing Leaders”), mentoring, and leadership development. We believe this is something 
+            that our young people need, especially in such challenging and unprecedented global times. We prioritize 
+            the holistic development and wellbeing of our students, their families, and our staff and faculty, providing 
+            periodic group counseling sessions for parents and students with a PRC-registered Guidance Counselor.
+          </p>
+          <p>
+            We provide parent support through our regular Parenting Peer Groups, which are bi-monthly gatherings 
+            (online/virtual if in-person is not possible) of small groups of parents to provide moral and academic 
+            support to one another. FCA accepts students from diverse backgrounds, religions, and walks of life. Our 
+            primary language used for teaching and communication is the English language, except for the subjects of 
+            Filipino, Araling Panlipunan, and certain topics under Home Economics and Livelihood Education/Technology 
+            and Livelihood Education.
+          </p>
+        </div>
+        <img src="/img/girl-sitting-classroom-raising-hands-Small.jpg" class="hidden lg:block">
+      </div>
+      <!-- 1st -->
+      <div class="serviceCard lg:flex lg:items-flex-start lg:flex-row">
+        <div class="serviceCard_img">
+          <img src="/img/rect1.png" class="w-[346px] h-[346px] object-cover lg:max-w-[346px]">
+        </div>
+        <div class="serviceCard_title text-center lg:text-left">
+          <ul class="serviceCardUL">
+            <li><i class="fa-solid fa-book"></i></li>
+            <li><h2>Tutorial Services</h2></li>
+          </ul>
+          <p class="pt-6">
+            Tutorial services are available all-year round. Parents may inquire at the admin office to avail of this extra service for their child. FCA does its best to match up students needing extra help with tutors who are passionate to help them learn and keep up with class activities.
+          </p>
+        </div>
+      </div>
+      <!-- 2nd -->
+      <div class="serviceCard lg:flex lg:items-flex-start lg:flex-row">
+        <div class="serviceCard_img">
+          <img src="/img/rect2.jpg" class="w-[346px] h-[346px] object-cover">
+        </div>
+        <div class="serviceCard_title text-center lg:text-left">
+          <ul class="serviceCardUL">
+            <li><i class="fa-solid fa-pen-ruler"></i></li>
+            <li><h2>Arts</h2></li>
+          </ul>
+          <p class="pt-6">
+            Art classes at FCA are hands-on, where students learn sketching, painting with acrylics on canvas, and using other mediums of art.
+          </p>
+        </div>
+      </div>
+      <!-- 3rd -->
+      <div class="serviceCard lg:flex lg:items-flex-start lg:flex-row">
+        <div class="serviceCard_img">
+          <img src="/img/rect3.jpg" class="w-[346px] h-[346px] object-cover">
+        </div>
+        <div class="serviceCard_title text-center lg:text-left">
+          <ul class="serviceCardUL">
+            <li><i class="fa-solid fa-book"></i></li>
+            <li><h2>Music Lessons</h2></li>
+          </ul>
+          <p class="pt-6">
+            Music class at FCA is practical and hands-on. Currently, classes offered are basic guitar, keyboard, and drums.
+          </p>
+        </div>
+      </div>
+      <!-- 4th -->
+      <div class="serviceCard lg:flex lg:items-flex-start lg:flex-row">
+        <div class="serviceCard_img">
+          <img src="/img/rect4.jpg" class="w-[346px] h-[346px] object-cover lg:max-w-[346px]">
+        </div>
+        <div class="serviceCard_title text-center lg:text-left">
+          <ul class="serviceCardUL">
+            <li><i class="fa-solid fa-book"></i></li>
+            <li><h2>Sports</h2></li>
+          </ul>
+          <p class="pt-6 text-center">
+            Physical Education class helps keep students physically fit and active. We incorporate a variety of sports and activities such as kickboxing, mixed martial arts, and fun activities such as hiking and camping.
+          </p>
+        </div>
+      </div>
+      <!-- 5th -->
+      <div class="serviceCard lg:flex lg:items-flex-start lg:flex-row">
+        <div class="serviceCard_img">
+          <img src="/img/rect5.png" class="w-[346px] h-[346px] object-cover lg:max-w-[346px]">
+        </div>
+        <div class="serviceCard_title text-center lg:text-left">
+          <ul class="serviceCardUL">
+            <li><i class="fa-solid fa-book"></i></li>
+            <li>Transportation</li>
+          </ul>
+          <p class="pt-6">
+            We offer transportation services for students. We have two (2) buses. You can sign up for the school service by filling out a form at the front office. Monthly bus service costs are based on the distance of the student’s pickup and drop-off location from the school.
+          </p>
+        </div>
+      </div>
+
+      <!-- Volunteer -->
+       <div class="serviceVolunteer mt-[10.5rem] mb-[7rem]">
+        <ul class="flex flex-col items-center justify-center">
+          <li><h2 class="text-center text-[#008542] text-3xl font-semibold">Volunteer Service Opportunity</h2></li>
+          <li class="pt-[2.8rem] text-center leading-[1.6rem] lg:max-w-[30rem]">
+            Opportunity for teacher volunteers to serve at the school and in varius ministry activities of Philippine Frontline Ministries. Experience the Philippines and learn about its culture, people, and educational system.
+          </li>
+          <li class="pt-[3.5rem]"><a href="" class="text-center mx-auto p-2 bg-secondary text-white rounded-md px-[2.4rem] py-[0.7rem]">See more</a></li>
+        </ul>
+       </div>
+    </div>
+   </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <!-- footer top -->
+        <div class="footer__top">
+          <div class="footer__logo">
+            <a href="home.html"><img src="/img/fca-logo.webp" alt="fca-logo" class="w-[200px]"></a>
+          </div>
+          <div class="footer__content">
+            <div class="footer__content__item">
+              <ul>
+                <li class="font-semibold">Admission</li>
+                <li><a href="">Playschool</a></li>
+                <li><a href="">Pre-Elementary</a></li>
+                <li><a href="">Elementary</a></li>
+                <li><a href="">Junior High</a></li>
+              </ul>
+            </div>
+            <div class="footer__content__item">
+              <ul>
+                <li class="font-semibold">Other Offers</a></li>
+                <li><a href="">Tutorial Services</a></li>
+                <li><a href="">Arts</a></li>
+                <li><a href="">Music Lessons</a></li>
+                <li><a href="">Sports</a></li>
+                <li><a href="">Transportation</a></li>
+              </ul>
+            </div>
+            <div class="footer__content__item">
+              <ul>
+                <li class="font-semibold">Quicklinks</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__btn">
+            <a href="https://fca.edu.ph/donate/">Give</a>
+            <a href="faq.html">FAQ's</a>
+          </div>
+        </div>
+        <!-- footer bottom -->
+        <div class="footer__bottom">
+          <div class="footer__credits">
+            <p>© Frontline Christain Academy 2023</p>
+          </div>
+          <div class="footer__icon"> 
+            <p>Follow us:</p><a href="https://www.facebook.com/frontlinechristianacademy"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="/dist/js/toggleMenu.js"></script>
+</body>
+</html>

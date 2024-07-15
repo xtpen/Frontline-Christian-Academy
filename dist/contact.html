@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontline Christian Academy</title>
+  <script src="https://kit.fontawesome.com/7f24b65851.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="icon" href="https://fca.edu.ph/wp-content/uploads/2022/11/cropped-fca-logo-w-e1668728939683-32x32.png" sizes="32x32">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header fixed lg:static z-50 w-full mx-auto bg-white">
+    <div class="container">
+      <div class="header_top border-b border-black flex items-center justify-between">
+        <div class="headerLogo w-[200px] py-2">
+          <a href="home.html"><img src="/img/fca-logo.webp"></a>
+        </div>
+        <div class="headerContact hidden lg:block">
+          <ul class="flex items-center">
+            <li class="mx-2"><i class="fa-solid fa-phone"></i> (049) 521-0732</li>
+            <li class="mx-2"><i class="fa-solid fa-mobile-retro"></i> (+63) 908-202-0749 | (+63) 926-363-9722</li>
+            <li class="mx-2"><a href="https://www.facebook.com/frontlinechristianacademy" class="py-3 px-5 bg-[#3b5897] text-white hover:bg-[#1573e5] rounded-[5px]">Facebook</a></li>
+            <li class="mx-2"><a href="faq.html" class="py-3 px-5 bg-white text-black hover:bg-[#28941e] border border-black rounded-[5px] hover:text-white">FAQ's</a></li>
+          </ul>
+        </div>
+        <div class="toggle_menu lg:hidden cursor-pointer duration-500 flex flex-col gap-[0.5px]">
+          <span class="w-[38px] h-1 block m-0.5"></span>
+          <span class="w-[38px] h-1 block m-0.5"></span>
+          <span class="w-[38px] h-1 block m-0.5"></span>
+        </div>
+      </div>
+      <nav class="header_bottom absolute top-[5.85rem] z-10 bg-white h-screen lg:h-auto -right-[100%] lg:right-0 w-full lg:block lg:static ease-in-out duration-500 transition-all">
+        <ul class="lg:flex lg:justify-evenly">
+          <li><a href="home.html" class="text-textdefault p-[0.5rem] block text-center">HOME</a></li>
+          <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+          <li><a href="about.html" class="text-textdefault p-[0.5rem] block text-center">ABOUT</a></li>
+          <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+          <li><a href="admission.html" class="text-textdefault p-[0.5rem] block text-center">ADMISSION</a></li>
+          <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+          <li><a href="services.html" class="text-textdefault p-[0.5rem] block text-center">SERVICES</a></li>
+          <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+          <li><a href="gallery.html" class="text-textdefault p-[0.5rem] block text-center">GALLERY</a></li>
+          <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+          <li><a href="contact.html" class="text-textdefault p-[0.5rem] block text-center">CONTACT</a></li> <span class="hidden lg:block lg:absolute lg:content-['_'] lg:bg-secondary 
+          lg:w-[13.2rem] lg:h-[0.5rem] lg:rounded-full lg:top-[5.6rem] lg:right-[27.4rem]"></span>
+          <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+          <li><a href="https://fca.edu.ph/donate/" class="hidden lg:block relative top-[0rem] py-2.5 px-9 bg-secondary text-white rounded-[5px]">GIVE</a></li>
+        </ul>
+        <div class="headerContact lg:hidden absolute text-center top-[22rem] left-[6rem] md:left-[14.5rem]">
+          <ul>
+            <li><a href="https://fca.edu.ph/donate/" class="relative top-[-3.2rem] py-3 px-10 bg-secondary text-white rounded-[5px]">GIVE</a></li>
+            <li class="relative top-[-2rem]"><i class="fa-solid fa-phone"></i> (049) 521-0732</li>
+            <li class="relative top-[-1.5rem]"><i class="fa-solid fa-mobile-retro"></i> (+63) 908-202-0749 | (+63) 926-363-9722</li>
+            <li class="mx-2"><a href="https://www.facebook.com/frontlinechristianacademy" class="relative top-[-0.5rem] py-3 px-8 bg-[#3b5897] text-white hover:bg-[#1573e5] rounded-[5px]">Facebook</a></li>
+            <li class="mx-2"><a href="faq.html" class="relative top-[1rem] py-3 px-8 bg-secondary text-white hover:bg-[#28941e] border border-black rounded-[5px] hover:text-white">FAQ's</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTACT -->
+   <section class="contact pt-[8rem]">
+    <div class="container">
+      <div class="contact_grid">
+        <div class="contact_form pb-[3rem] border-2 border-[#e4e6eb] shadow-2xl bg-white">
+          <form action="" class="flex flex-col gap-[1.5rem] p-10">
+            <input type="text" placeholder="Your Name" class="p-2 py-3 border-[1px] border-[#9da4b0] rounded-lg">
+            <input type="text" placeholder="Your Email" class="p-2 py-3 border-[1px] border-[#9da4b0] rounded-lg">
+            <input type="text" placeholder="Subject" class="p-2 py-3 border-[1px] border-[#9da4b0] rounded-lg">
+            <textarea name="" placeholder="Your Message" class="p-2 py-3 border-[1px] border-[#9da4b0] rounded-lg h-[16rem]"></textarea>
+            <a href="" class="bg-[#27941e] p-3 mt-4 text-center text-white rounded-lg">Send</a>
+          </form>
+        </div>
+        <div class="contact_details">
+          <h2 class="text-7xl font-extralight mb-10">Contact Us</h2>
+          <ul>
+            <li class="mb-5"><i class="fa-solid fa-phone text-[#008542] text-2xl mr-4"></i>  (049) 521-0732</li>
+            <li class="mb-5"><i class="fa-solid fa-mobile-retro text-[#008542] text-2xl mr-4"></i> (+63) 908-202-0749 | (+63) 926-363-9722</li>
+            <li class="mb-5"><i class="fa-solid fa-envelope text-[#008542] text-2xl mr-4"></i> info@fca.edu.ph</li>
+            <li class="mb-5"><i class="fa-brands fa-facebook text-[#008542] text-2xl mr-4"></i> facebook.com/frontlinechristianacademy</li>
+            <li class="mb-5"><i class="fa-solid fa-location-dot text-[#008542] text-2xl mr-4"></i> Baloc Rd., Brgy. San Ignacio, San Pablo City, 4000 Laguna</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <!-- footer top -->
+        <div class="footer__top">
+          <div class="footer__logo">
+            <a href="home.html"><img src="/img/fca-logo.webp" alt="fca-logo" class="w-[200px]"></a>
+          </div>
+          <div class="footer__content">
+            <div class="footer__content__item">
+              <ul>
+                <li class="font-semibold">Admission</li>
+                <li><a href="">Playschool</a></li>
+                <li><a href="">Pre-Elementary</a></li>
+                <li><a href="">Elementary</a></li>
+                <li><a href="">Junior High</a></li>
+              </ul>
+            </div>
+            <div class="footer__content__item">
+              <ul>
+                <li class="font-semibold">Other Offers</a></li>
+                <li><a href="">Tutorial Services</a></li>
+                <li><a href="">Arts</a></li>
+                <li><a href="">Music Lessons</a></li>
+                <li><a href="">Sports</a></li>
+                <li><a href="">Transportation</a></li>
+              </ul>
+            </div>
+            <div class="footer__content__item">
+              <ul>
+                <li class="font-semibold">Quicklinks</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__btn">
+            <a href="https://fca.edu.ph/donate/">Give</a>
+            <a href="faq.html">FAQ's</a>
+          </div>
+        </div>
+        <!-- footer bottom -->
+        <div class="footer__bottom">
+          <div class="footer__credits">
+            <p>© Frontline Christain Academy 2023</p>
+          </div>
+          <div class="footer__icon"> 
+            <p>Follow us:</p><a href="https://www.facebook.com/frontlinechristianacademy"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="/dist/js/toggleMenu.js"></script>
+</body>
+</html>

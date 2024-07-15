@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontline Christian Academy</title>
+    <script src="https://kit.fontawesome.com/7f24b65851.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" href="https://fca.edu.ph/wp-content/uploads/2022/11/cropped-fca-logo-w-e1668728939683-32x32.png" sizes="32x32">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header fixed lg:static z-50 w-full mx-auto bg-white">
+        <div class="container">
+          <div class="header_top border-b border-black flex items-center justify-between">
+            <div class="headerLogo w-[200px] py-2">
+              <a href="home.html"><img src="/img/fca-logo.webp"></a>
+            </div>
+            <div class="headerContact hidden lg:block">
+              <ul class="flex items-center">
+                <li class="mx-2"><i class="fa-solid fa-phone"></i>(049) 521-0732</li>
+                <li class="mx-2"><i class="fa-solid fa-mobile-retro"></i>(+63) 908-202-0749 | (+63) 926-363-9722</li>
+                <li class="mx-2"><a href="https://www.facebook.com/frontlinechristianacademy" class="py-3 px-5 bg-[#3b5897] text-white hover:bg-[#1573e5] rounded-[5px]">Facebook</a></li>
+                <li class="mx-2"><a href="./faq.html" class="py-3 px-5 bg-white text-black hover:bg-[#28941e] border border-black rounded-[5px] hover:text-white">FAQ's</a></li>
+              </ul>
+            </div>
+            <div class="toggle_menu lg:hidden cursor-pointer duration-500 flex flex-col gap-[0.5px]">
+              <span class="w-[38px] h-1 block m-0.5"></span>
+              <span class="w-[38px] h-1 block m-0.5"></span>
+              <span class="w-[38px] h-1 block m-0.5"></span>
+            </div>
+          </div>
+          <nav class="header_bottom absolute top-[5.85rem] z-10 bg-white h-screen lg:h-auto -right-[100%] lg:right-0 w-full lg:block lg:static ease-in-out duration-500 transition-all">
+            <ul class="lg:flex lg:justify-evenly">
+              <li><a href="home.html" class="text-textdefault p-[0.5rem] block text-center">HOME</a></li>
+              <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+              <li><a href="about.html" class="text-textdefault p-[0.5rem] block text-center">ABOUT</a></li>
+              <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+              <li><a href="./admission.html" class="text-textdefault p-[0.5rem] block text-center">ADMISSION</a></li>
+              <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+              <li><a href="services.html" class="text-textdefault p-[0.5rem] block text-center">SERVICES</a></li>
+              <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+              <li><a href="gallery.html" class="text-textdefault p-[0.5rem] block text-center">GALLERY</a></li>
+              <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+              <li><a href="contact.html" class="text-textdefault p-[0.5rem] block text-center">CONTACT</a></li>
+              <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+              <li><a href="https://fca.edu.ph/donate/" class="hidden lg:block relative top-[0rem] py-2.5 px-9 bg-secondary text-white rounded-[5px]">GIVE</a></li>
+            </ul>
+            <div class="headerContact lg:hidden absolute text-center top-[22rem] left-[6rem] md:left-[14.5rem]">
+              <ul>
+                <li><a href="https://fca.edu.ph/donate/" class="relative top-[-3.2rem] py-3 px-10 bg-secondary text-white rounded-[5px]">GIVE</a></li>
+                <li class="relative top-[-2rem]"><i class="fa-solid fa-phone"></i> (049) 521-0732</li>
+                <li class="relative top-[-1.5rem]"><i class="fa-solid fa-mobile-retro"></i> (+63) 908-202-0749 | (+63) 926-363-9722</li>
+                <li class="mx-2"><a href="https://www.facebook.com/frontlinechristianacademy" class="relative top-[-0.5rem] py-3 px-8 bg-[#3b5897] text-white hover:bg-[#1573e5] rounded-[5px]">Facebook</a></li>
+                <li class="mx-2"><a href="faq.html" class="relative top-[1rem] py-3 px-8 bg-secondary text-white hover:bg-[#28941e] border border-black rounded-[5px] hover:text-white">FAQ's</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+
+  <section class="faqAbout">
+    <div class="containter">
+      <div class="faqAbout__wrapper">
+        <div class="faqAbout__title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+    <!-- About Our School -->
+  <section class="aboutSchool">
+    <div class="container">
+      <div class="aboutSchool__wrapper">
+        <div class="aboutSchool__menu">
+               <ul class="aboutTabs">
+            <li id="tabs-1" class="faq__menu active">About Our School</li>
+            <li id="tabs-2" class="faq__menu">Excellent Learning and Facilities</li>
+            <li id="tabs-3" class="faq__menu">Job Opportunities</li>
+        </ul>
+        </div>
+     
+        <div class="school__tabs">
+          <div class="aboutSchool__content active" id="tabs-1-content">
+          <h3>About Our School</h3>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q:  </small>What makes you different?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+               <p>
+              One of our key focus areas is Social Emotional Learning (in partnership with a US Youth Leadership organization: “Growing Leaders”), mentoring, and leadership development. We believe this is something that our young people need, especially in such challenging and unprecedented global times.
+            </p>
+            <p>
+              We also prioritize the holistic development and wellbeing of our students, their families, and our staff and faculty, providing periodic group counseling sessions for parents and students with a PRC-registered Guidance Counselor. We provide genuinely caring support for families, and host monthly Parenting Peer Groups (PPGs), which are gatherings (online/virtual if in-person is not possible) of small groups of parents to provide moral support and academic support to one another.
+            </p>
+            <p>
+              FCA accepts students from diverse backgrounds, religions, and walks of life. Our primary language used for teaching and communication is the English language, except for the subjects of Filipino, Araling Panlipunan, and certain topics under Home Economics and Livelihood Education/Technology and Livelihood Education.
+            </p>
+            </div>
+           
+          </div>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>What are your Core Values?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+               <p>
+              <text class="fa-solid fa-circle"></i></text> Christ-centeredness: We regard the Bible as the highest authority on morality and spirituality. Our curriculum is Bible-based and our desire is that all who enter the doors of FCA will be impacted to become more Christ-like.
+            </p>
+            <p>
+              <text class="fa-solid fa-circle"></i></text> Genuine Care and Love for People: The Scriptures command us to "...love the Lord your God with all your heart, and with all your soul, and with all your mind," and to “love your neighbor as yourself.” We genuinely love and care for each other, our students, and their families, our donors, partners, and all stakeholders… and desire for them to walk in the fullness of the promise of abundant life. This desire drives us to pursue exceptional customer service and high client satisfaction. We also genuinely love and care for our employees. We aim to be a fun and meaningful place to work, and to provide a conducive environment that encourages collaboration of all stakeholders.
+            </p>
+            <p>
+              <text class="fa-solid fa-circle"></i></text> Academic excellence - We desire to produce learners who are academically competent, able to be globally competitive, and who are critical, strategic thinkers.
+            </p>
+            </div>
+           
+          </div>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>What are the fees?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+               <p>
+              <text class="fa-solid fa-circle"></i></text> Tuition Fees for Pre-Elementary range from ₱54,000-₱55,000
+            </p>
+            <p>
+              <text class="fa-solid fa-circle"></i></text> Tuition Fees for Elementary range from ₱57,000-₱58,000
+            </p>
+            <p>
+              <text class="fa-solid fa-circle"></i></text> Tuition Fees for Junior Highschool range from ₱57,000-₱59,000
+            </p>
+            <p>
+              Payment schemes are flexible - installment plans are available.
+            </p>
+            <p>
+              You can contact our finance office for special arrangements or plans.
+            </p>
+            <p>
+              We accommodate online payments, bank transfers, gcash, and credit/debit cards via online payment links.
+            </p>
+            </div>
+           
+          </div>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>What are your Core Values?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+              <p>
+              <text class="fa-solid fa-circle"></i></text> Yes, we do. Click here
+            </p>
+            </div>
+            
+          </div>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>What are your Core Values?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+                <p>
+              <text class="fa-solid fa-circle"></i></text> The tentative date is August 12, 2024.
+            </p>
+            </div>
+          
+          </div>
+        </div>
+
+        <!-- Excellent Learning and Facilities -->
+        
+        <div class="aboutSchool__content" id="tabs-2-content">
+          <h3>Excellent Learning and Facilities</h3>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>What curriculum, books, and learning platform do you use?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+               <p>
+              <text class="fa-solid fa-circle"></i></text>  FCA follows the K-12 Curriculum of the Department of Education, and integrates its core values. Many of our books are shipped from the USA, and modules are also printed by the school. FCA does its best to not overload its students; the amount of work assigned is very doable, as long as the student can focus during class times and is given support by his/her family. For assigning online tasks, FCA uses Google Classroom, and the Google Suite for Education. Click here for a quick introduction and tutorial.
+            </p>
+            </div>
+          </div>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>How do you keep classes interesting and meaningful?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+               <p>
+              <text class="fa-solid fa-circle"></i></text>   We acknowledge that most of today’s students are visual learners. We make use of fun videos, colorful slides, and other interesting resources and do our best to keep students engaged. Our teachers are skilled, and attend regular training and seminars to keep their teaching strategies relevant and effective. Check out our website to see photos.
+            </p>
+            </div>
+          </div>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>Do new students need to take any entrance exams?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+            <p>
+              <text class="fa-solid fa-circle"></i></text>  Yes, and the exams depend on the student’s grade level. For Pre-Elementary levels, and Grades 1, 2, and 3, a basic reading and numeracy assessment is done by the Department supervisor. For Grades 4-10, there are the following:
+            </p>
+            <p>
+              <text class="fa-solid fa-circle"></i></text> Logic Exam (Can be sent and accomplished online)
+            </p>
+            <p>
+              <text class="fa-solid fa-circle"></i></text> Basic Language and Math Skills (scheduled in-person or via 1-on-1 video call)
+            </p>
+            <p>
+              <text class="fa-solid fa-circle"></i></text> Grit Scale (Can be sent and accomplished online. Grades 6-10 only)
+            </p>
+            
+            </div>
+          </div>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>What learning modalities do you offer?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+            <p>
+              <text class="fa-solid fa-circle"></i></text> FCA offers Face-to-Face Classes, and is applying for a Homeschooling Program under DepEd.
+            </p>
+            <p>
+              <text class="fa-solid fa-circle"></i></text> Face-to-Face Classes for levels K-12 will be 3-4 days per week until October 21, 2022. Starting November 2022, mentioned levels will transition to 5-day in-person classes, in observance of DepEd Order No. 34, s. 2022.
+            </p>
+            <p>
+              <text class="fa-solid fa-circle"></i></text> Homeschooling Program: Still under application.
+            </p>
+            </div>
+          </div>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>Do you accept students with special needs?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+            <p>
+              <text class="fa-solid fa-circle"></i></text> Yes, if the parent/guardian can provide a certificate, letter, or recommendation from the child’s behavioral psychologist that the student is recommended for attendance to a regular school.
+            </p>
+            </div>
+          </div>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>Do the students have to wear uniforms?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+            <p>
+              <text class="fa-solid fa-circle"></i></text> Yes, they will have to wear their uniforms.
+            </p>
+            </div>
+          </div>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>What do I need to do as a parent to prepare for this school year?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+            <p>
+              <text class="fa-solid fa-circle"></i></text> Click HERE to view the needed school supplies per level..
+            </p>
+            </div>
+          </div>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>Do you offer tutorials?</span<i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+            <p>
+              <text class="fa-solid fa-circle"></i></text> Yes, we do. Our academic head aligns students with available tutors. Tutorial rate is P150.00 per hour.
+            </p>
+            </div>
+          </div>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>Do you offer transportation services?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+            <p>
+              <text class="fa-solid fa-circle"></i></text> Yes. We have transportation services , and rates depend on the pick-up and drop-off locations. Click here for current SY rates.
+            </p>
+            <p>
+              For any further questions, please contact us at the provided numbers or email address.
+            </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job Opportunities -->
+        
+        <div class="aboutSchool__content" id="tabs-3-content">
+          <h3>Job Opportunities</h3>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>How to apply?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+            <p>
+              Please send your CV to hrad@fca.edu.ph. We will review, and contact you as soon as possible. You may still send your CV even if there are no current job openings. Thank you!"  
+            </p>
+            </div>
+          </div>
+          <div class="aboutSchool__item">
+            <h4><span><small>Q: </small>Volunteer Opportunities?</span><i class="fa-solid fa-chevron-down"></i></h4>
+            <div class="aboutSchool__text">
+            <p>
+              View PDF file
+            </p>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <!-- footer top -->
+            <div class="footer__top">
+              <div class="footer__logo">
+                <a href="home.html"><img src="/img/fca-logo.webp" alt="fca-logo" class="w-[200px]"></a>
+              </div>
+              <div class="footer__content">
+                <div class="footer__content__item">
+                  <ul>
+                    <li class="font-semibold">Admission</li>
+                    <li><a href="">Playschool</a></li>
+                    <li><a href="">Pre-Elementary</a></li>
+                    <li><a href="">Elementary</a></li>
+                    <li><a href="">Junior High</a></li>
+                  </ul>
+                </div>
+                <div class="footer__content__item">
+                  <ul>
+                    <li class="font-semibold">Other Offers</a></li>
+                    <li><a href="">Tutorial Services</a></li>
+                    <li><a href="">Arts</a></li>
+                    <li><a href="">Music Lessons</a></li>
+                    <li><a href="">Sports</a></li>
+                    <li><a href="">Transportation</a></li>
+                  </ul>
+                </div>
+                <div class="footer__content__item">
+                  <ul>
+                    <li class="font-semibold">Quicklinks</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__btn">
+                <a href="https://fca.edu.ph/donate/">Give</a>
+                <a href="faq.html">FAQ's</a>
+              </div>
+            </div>
+            <!-- footer bottom -->
+            <div class="footer__bottom">
+              <div class="footer__credits">
+                <p>© Frontline Christain Academy 2023</p>
+              </div>
+              <div class="footer__icon"> 
+                <p>Follow us:</p><a href="https://www.facebook.com/frontlinechristianacademy"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  <script src="./JS/dropdown.js"></script>
+  <script src="./JS/faqTab.js"></script>
+  <script src="./JS/header.js"></script>
+</body>
+</html>

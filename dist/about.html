@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontline Christian Academy</title>
+    <script
+      src="https://kit.fontawesome.com/7f24b65851.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="icon" href="https://fca.edu.ph/wp-content/uploads/2022/11/cropped-fca-logo-w-e1668728939683-32x32.png" sizes="32x32">
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header fixed lg:static z-50 w-full mx-auto bg-white">
+      <div class="container">
+        <div class="header_top border-b border-black flex items-center justify-between">
+          <div class="headerLogo w-[200px] py-2">
+            <a href="home.html"><img src="/img/fca-logo.webp"></a>
+          </div>
+          <div class="headerContact hidden lg:block">
+            <ul class="flex items-center">
+              <li class="mx-2"><i class="fa-solid fa-phone"></i>(049) 521-0732</li>
+              <li class="mx-2"><i class="fa-solid fa-mobile-retro"></i>(+63) 908-202-0749 | (+63) 926-363-9722</li>
+              <li class="mx-2"><a href="https://www.facebook.com/frontlinechristianacademy" class="py-3 px-5 bg-[#3b5897] text-white hover:bg-[#1573e5] rounded-[5px]">Facebook</a></li>
+              <li class="mx-2"><a href="faq.html" class="py-3 px-5 bg-white text-black hover:bg-[#28941e] border border-black rounded-[5px] hover:text-white">FAQ's</a></li>
+            </ul>
+          </div>
+          <div class="toggle_menu lg:hidden cursor-pointer duration-500 flex flex-col gap-[0.5px]">
+            <span class="w-[38px] h-1 block m-0.5"></span>
+            <span class="w-[38px] h-1 block m-0.5"></span>
+            <span class="w-[38px] h-1 block m-0.5"></span>
+          </div>
+        </div>
+        <nav class="header_bottom absolute top-[5.85rem] z-10 bg-white h-screen lg:h-auto -right-[100%] lg:right-0 w-full lg:block lg:static ease-in-out duration-500 transition-all">
+          <ul class="lg:flex lg:justify-evenly">
+            <li><a href="./home.html" class="text-textdefault p-[0.5rem] block text-center">HOME</a></li>
+            <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+            <li><a href="about.html" class="text-textdefault p-[0.5rem] block text-center">ABOUT</a></li> <span class="hidden lg:block lg:absolute lg:content-['_'] lg:bg-secondary 
+            lg:w-[12.2rem] lg:h-[0.5rem] lg:rounded-full lg:top-[5.6rem] lg:right-[82.2rem]"></span>
+            <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+            <li><a href="admission.html" class="text-textdefault p-[0.5rem] block text-center">ADMISSION</a></li>
+            <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+            <li><a href="services.html" class="text-textdefault p-[0.5rem] block text-center">SERVICES</a></li>
+            <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+            <li><a href="gallery.html" class="text-textdefault p-[0.5rem] block text-center">GALLERY</a></li>
+            <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+            <li><a href="contact.html" class="text-textdefault p-[0.5rem] block text-center">CONTACT</a></li>
+            <span class="w-[0.1rem] h-[2.5rem] bg-headerbotspan relative top-[1rem] rounded-[0.375rem]"></span>
+            <li><a href="https://fca.edu.ph/donate/" class="hidden lg:block relative top-[0rem] py-2.5 px-9 bg-secondary text-white rounded-[5px]">GIVE</a></li>
+          </ul>
+          <div class="headerContact lg:hidden absolute text-center top-[22rem] left-[6rem] md:left-[14.5rem]">
+            <ul>
+              <li><a href="https://fca.edu.ph/donate/" class="relative top-[-3.2rem] py-3 px-10 bg-secondary text-white rounded-[5px]">GIVE</a></li>
+              <li class="relative top-[-2rem]"><i class="fa-solid fa-phone"></i> (049) 521-0732</li>
+              <li class="relative top-[-1.5rem]"><i class="fa-solid fa-mobile-retro"></i> (+63) 908-202-0749 | (+63) 926-363-9722</li>
+              <li class="mx-2"><a href="https://www.facebook.com/frontlinechristianacademy" class="relative top-[-0.5rem] py-3 px-8 bg-[#3b5897] text-white hover:bg-[#1573e5] rounded-[5px]">Facebook</a></li>
+              <li class="mx-2"><a href="faq.html" class="relative top-[1rem] py-3 px-8 bg-secondary text-white hover:bg-[#28941e] border border-black rounded-[5px] hover:text-white">FAQ's</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="aboutBanner">
+      <div class="container">
+        <div class="about__wrapper">
+          <h2>About Us</h2>
+          <div class="tabs">
+            <ul class="aboutTabs">
+              <li id="tabs-1" class="aboutTabs__category active">The Founders</li>
+              <li id="tabs-2" class="aboutTabs__category">The History of FCA</li>
+              <li id="tabs-3" class="aboutTabs__category">Mission & Vision</li>
+              <li id="tabs-4" class="aboutTabs__category">Core Values</li>
+            </ul>
+            <div class="aboutTabs__content">
+              <div class="aboutTabs__details active" id="tabs-1-content">
+                <div class="aboutTabs__details--wrap">
+                  <h3>The Founders</h3>
+                  <p>
+                    Jeffrey Pessina was born in Illinois, USA, and is one of ten
+                    children. At the age of twenty, after a long period of drug
+                    addiction and alcohol abuse, God changed his life. Five weeks
+                    after his decision to become a Christ-follower, he left for
+                    the Philippines to serve as a missionary. He met his wife,
+                    Rowena Pessina, in 1983. They married in 1986 and have four
+                    grown children. In 1987 they incorporated the Philippine
+                    Frontline Ministries, Inc (PFM), an evangelistic team ministry
+                    that was then fully mobile, and traveled throughout the nation
+                    sharing the good news of Christ Jesus. In 2000, PFM moved to
+                    establish a mission center in San Pablo City, Laguna and
+                    branched out into other initiatives. Frontline now oversees a
+                    growing multi-site church (Frontline Worship Center), a
+                    program to protect and develop abandoned and abused children
+                    (Face the Children), a Christian school (Frontline Christian
+                    Academy, Inc.), and is involved in compassionate ministries to
+                    change the lives of the marginalized poor through social
+                    enterprise businesses and livelihood programs.
+                  </p>
+                  <div class="imgs">
+                    <img class="img1" src="/img/the-Founder.jpg" alt="" />
+                    <img class="img2" src="/img/founders2-2.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="aboutTabs__details" id="tabs-2-content">
+                <div class="aboutTabs__details--wrap">
+                  <h3>The History of FCA</h3>
+                  <p>
+                    Frontline Christian Academy, Inc. (FCA) began initially as a
+                    home school for the staff children of the Philippine Frontline
+                    Ministries, Inc., (PFM) (www.thefrontline.asia). Later PFM
+                    decided to pursue solutions for abandoned and abused street
+                    children, and established a child care initiative named Face
+                    the Children (FTC) (www.facethechildren.org). In line with
+                    this initiative, the strategic scope of FCA was expanded to
+                    meet the educational needs of the children being cared for
+                    under the FTC program.
+                  </p>
+                  <p>
+                    What had started in 2003 with 17 students in a doublewide
+                    air-conditioned trailer, located in a small compound in Brgy.
+                    San Francisco, San Pablo City, quickly expanded. In 2007, FCA
+                    was moved to a more suitable, larger venue, in the same
+                    barangay. FCA was officially incorporated as a non-stock,
+                    non-profit educational institution in July 2009, and obtained
+                    the necessary permits from the Department of Education in
+                    2011. FCA refers to 2009 as its official “first year.”
+                  </p>
+                  <p>
+                    FCA moved to its permanent location in Baloc Rd., Brgy. San
+                    Ignacio, in year 2020.
+                  </p>
+                  <div class="imgs">
+                    <img class="img3" src="/img/Rectangle-55.png" alt="" />
+                    <img class="img3" src="/img/Rectangle-61.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="aboutTabs__details" id="tabs-3-content">
+                <div class="aboutTabs__details--wrap">
+                  <h3>Mission</h3>
+                  <p>
+                    To facilitate holistic and caring Christian education that
+                    develops learners in godly character and academic ability,
+                    while creating positive social impact and being a fun,
+                    meaningful place to work.
+                  </p>
+                  <h3>Vision</h3>
+                  <p>
+                    Frontline Christian Academy will create lasting local and
+                    national impact through the development of Godly steward
+                    leaders.
+                  </p>
+                </div>
+              </div>
+              <div class="aboutTabs__details" id="tabs-4-content">
+                <div class="aboutTabs__details--wrap">
+                  <div class="core__wrap">
+                    <div class="seperation">
+                      <h3>Christ-centerdness</h3>
+                    <p>
+                      We regard the Bible as the highest authority on morality and spirituality. Our curriculum is Bible-based and our desire is that all who enter the doors of FCA will be impacted to become more Christ-like.
+                    </p>
+                    <h3>Genuine Care and Love for People</h3>
+                    <p>
+                      The most important commandment of the Scriptures is “You shall love the Lord your God with all your heart, and with all your soul, and with all your mind,” and “‘You shall love your neighbor as yourself. We genuinely love and care for each other, our students, and their families, our donors, partners, and all stakeholders… and desire for them to walk in the fullness of the promise of abundant life. This desire drives us to pursue exceptional customer service and high client satisfaction. We also genuinely love and care for our employees, and aim to be a fun and meaningful place to work, and to provide a conducive environment that encourages collaboration of all stakeholders.
+                    </p>
+                    </div>
+                    <div class="seperation">
+                      <h3>Academic excellence</h3>
+                    <p>
+                      We desire to produce learners who are academically competent, able to be globally competitive, and who are critical, strategic thinkers.                
+                    </p>
+                    <h3>Leadership with Integrity</h3>
+                    <p>
+                      We desire to be a school that influences its people to become leaders of integrity – individuals who are honest, consistent, trustworthy, and governed by a moral compass.
+                    </p>
+                    <h3>Real-life Skills</h3>
+                    <p>
+                      We believe in preparing our students for life after formal schooling, and inculcating in them a strong work ethic, a passion for excellence, and real-life skills such as communication and critical thinking, as well as practical knowledge for daily life.
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- team -->
+     <section class="team">
+      <div class="container">
+        <div class="team__wrapper">
+          <h2>Meet The Team</h2>
+          <div class="team__contain">
+
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/Maam-Doodz.png" alt="">
+              </div>
+              <h4>Rhoda Lynn P. Dayo, MBA</h4>
+              <p>School Director</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/JUMAWAN-NELISSA.png" alt="">
+              </div>
+              <h4>Nelisa G. Jumawan, LPT</h4>
+              <p>Academic Department Head</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/CALLEJO-MARIDEL.png" alt="">
+              </div>
+              <h4>Maridel M. Callejo</h4>
+              <p>Finance Department Head</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/CARINGAL-MARK-GABRIEL.png" alt="">
+              </div>
+              <h4>Mark Gabriel L. Caringal</h4>
+              <p>HRAD Department Head</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/UBEDA-II-ALEXANDER.png" alt="">
+              </div>
+              <h4>Alexander P. Ubeda II</h4>
+              <p>IT Department Head</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/Ms.-Beth.png" alt="">
+              </div>
+              <h4>Bethany Joy P. Acoba</h4>
+              <p>Marketing OIC</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/Pessina-Rowena-Del-Monte-Disciplinary-Officer.png" alt="">
+              </div>
+              <h4>Rowena D. Pessina</h4>
+              <p>Disciplinary Officer</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/JARON-NIEL-PATRICK.png" alt="">
+              </div>
+              <h4>Niel Patrick P. Jaron</h4>
+              <p>Registrar / Cashier</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/BERNARDINO-MARJORIE.png" alt="">
+              </div>
+              <h4>Marjorie C. Bernardino</h4>
+              <p>Communications Staff</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/PESSINA-MARIA-RIVA.png" alt="">
+              </div>
+              <h4>Maria Riva Rose T. Pessina</h4>
+              <p>School Nurse</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/COVIC-MA.png" alt="">
+              </div>
+              <h4>Ma. Aiza B. Covic</h4>
+              <p>Extra-Curricular Activities Coordinator</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/CRISOLO-MARY-JANE.png" alt="">
+              </div>
+              <h4>Mary Jane U. Crisolo</h4>
+              <p>Stuco Adviser</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/Ilao-Marwin-Razon-Arts-Teacher.png" alt="">
+              </div>
+              <h4>Marwin R. Ilao, LPT</h4>
+              <p>Arts Teacher</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/ARADA-CARLITO-ATIENZA.png" alt="">
+              </div>
+              <h4>Carlito B. Arada</h4>
+              <p>Music Teacher</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/KATIGBAK-JANINE-GOMEZ.png" alt="">
+              </div>
+              <h4>Janine G. Katigbak, LPT</h4>
+              <p>Librarian</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/ILAO-SHARON-ROSE.png" alt="">
+              </div>
+              <h4>Sharon Rose B. Ilao</h4>
+              <p>Pre-Elementary Department Head</p>
+              <p>Kindergarten Adviser</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/DELATORRE-JOYCE-AZEL.png" alt="">
+              </div>
+              <h4>Joyce Azel A. Dela Torre</h4>
+              <p>Pre-Elementary Teacher</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/DE-JESUS-MARIA-BALIDOY.png" alt="">
+              </div>
+              <h4>Maria B. De Jesus, LPT</h4>
+              <p>Pre-Elementary Teacher</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/ANGELES-ANGELICA-ROSE-MANILA.png" alt="">
+              </div>
+              <h4>Angelica Rose M. Angeles, LPT</h4>
+              <p>Pre-Elementary Teacher</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/ALCANTARA-LEAREE-CAMARA.png" alt="">
+              </div>
+              <h4>Learee C. Alcantara, LPT</h4>
+              <p>Pre-Elementary Teacher</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/LACERNA-ELISHA-DENIELLE.png" alt="">
+              </div>
+              <h4>Elisha Denielle A. Lacerna, LPT</h4>
+              <p>Pre-Elementary Teacher</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/ABION-LEILA-MAE-DIOMAMPO.png" alt="">
+              </div>
+              <h4>Leila Mae D. Abion</h4>
+              <p>Pre-Elementary Teacher</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/PALOMERA-DONNA-MAY.png" alt="">
+              </div>
+              <h4>Donna May C. Palomera, LPT</h4>
+              <p>School Director</p>
+              <p>Grade 1 Adviser</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/GALICIA-KAREN-JOY.png" alt="">
+              </div>
+              <h4>Karen M. Galicia, LPT</h4>
+              <p>Grade 2 Adviser</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/DIOLE-PAULINE.png" alt="">
+              </div>
+              <h4>Pauline M. Diole</h4>
+              <p>Grade 3 Adviser</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/LOZADA-CHRISTINE-JOY.png" alt="">
+              </div>
+              <h4>Cristine Joy B. Lozada, LPT</h4>
+              <p>Grade 4 Adviser</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/ARRIOLA-JOHN-MARK.png" alt="">
+              </div>
+              <h4>John Mark M. Arriola</h4>
+              <p>Grade 5 Adviser</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/VIARO-CHRISTIAN.png" alt="">
+              </div>
+              <h4>Christian S. Viaro</h4>
+              <p>Grade 6 Adviser</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/TORNEO-JEAN.png" alt="">
+              </div>
+              <h4>Jean A. Torneo, LPT</h4>
+              <p>JHS Department Head</p>
+              <p>Grade 8 Advise</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/TOLENTINO-MARY-ROSE.png" alt="">
+              </div>
+              <h4>Mary Rose B. Tolentino, LPT</h4>
+              <p>Grade 7 Adviser</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/KATIGBAK-JANINE-GOMEZ-1.png" alt="">
+              </div>
+              <h4>Janine G. Katigbak, LPT</h4>
+              <p>Grade 9 Adviser</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/RODRIGUEZ-SARAH-MAY.png" alt="">
+              </div>
+              <h4>Sarah May P. Rodriguez, LPT</h4>
+              <p>Grade 10 Adviser</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/BAGSIC-DENNIS.png" alt="">
+              </div>
+              <h4>Dennis F. Bagsic</h4>
+              <p>Maintenance Staff</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/ANENIAS-ANGELICA-LAGRASON.png" alt="">
+              </div>
+              <h4>Angelica L. Anenias</h4>
+              <p>Maintenance Staff</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/GABULE-ZYREL.png" alt="">
+              </div>
+              <h4>Zyrel P. Gabule</h4>
+              <p>Maintenance Staff</p>
+            </div>
+            <div class="teamCard">
+              <div class="imgWrapper">
+                <img src="/img/fca-logo.png" alt="">
+                <img src="/img/VILLAMIN-ROBERTO.png" alt="">
+              </div>
+              <h4>Roberto P. Villamin</h4>
+              <p>Maintenance Staff</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <!-- footer top -->
+          <div class="footer__top">
+            <div class="footer__logo">
+              <a href="home.html"><img src="/img/fca-logo.webp" alt="fca-logo" class="w-[200px]"></a>
+            </div>
+            <div class="footer__content">
+              <div class="footer__content__item">
+                <ul>
+                  <li class="font-semibold">Admission</li>
+                  <li><a href="">Playschool</a></li>
+                  <li><a href="">Pre-Elementary</a></li>
+                  <li><a href="">Elementary</a></li>
+                  <li><a href="">Junior High</a></li>
+                </ul>
+              </div>
+              <div class="footer__content__item">
+                <ul>
+                  <li class="font-semibold">Other Offers</a></li>
+                  <li><a href="">Tutorial Services</a></li>
+                  <li><a href="">Arts</a></li>
+                  <li><a href="">Music Lessons</a></li>
+                  <li><a href="">Sports</a></li>
+                  <li><a href="">Transportation</a></li>
+                </ul>
+              </div>
+              <div class="footer__content__item">
+                <ul>
+                  <li class="font-semibold">Quicklinks</a></li>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="admission.html">Admission</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__btn">
+              <a href="https://fca.edu.ph/donate/">Give</a>
+              <a href="faq.html">FAQ's</a>
+            </div>
+          </div>
+          <!-- footer bottom -->
+          <div class="footer__bottom">
+            <div class="footer__credits">
+              <p>© Frontline Christain Academy 2023</p>
+            </div>
+            <div class="footer__icon"> 
+              <p>Follow us:</p><a href="https://www.facebook.com/frontlinechristianacademy"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+
+
+    <script src="./js/aboutTabs.js"></script>
+    <script src="./js/toggleMenu.js"></script>
+  </body>
+</html>
